@@ -51,4 +51,4 @@ Read [the generated business memo](outputs/decision_memo.md), [machine-readable 
 
 ## Extensions
 
-This is a runnable first version. The decision memo lists domain-specific next steps. For a stronger final portfolio, add your own interpretation, sensitivity analysis, a genuine error audit and a short walkthrough video. Favor improvements that answer a business question over additional tools with no decision value.
+This is a runnable first version. The decision memo lists domain-specific next steps if a peer would like some inspiration from this work.
