@@ -1,0 +1,57 @@
+{
+  "seed": 20261001,
+  "quotes": 24000,
+  "recommendations": [
+    {
+      "corridor": "Market-A",
+      "price_slope": -1.0231117195145978,
+      "slope_ci_low": -1.1819179941249125,
+      "slope_ci_high": -0.8397167301804213,
+      "average_price_elasticity": -0.7973302961491849,
+      "recommended_multiplier": 1.0,
+      "predicted_conversion": 0.5896047179152003,
+      "predicted_contribution_per_quote_usd": 2.6169642679174565,
+      "validation_brier": 0.21632105798086645,
+      "validation_selected_arm_quotes": 674,
+      "validation_selected_arm_conversion": 0.5875370919881305,
+      "validation_selected_arm_contribution_usd": 2.632566765578635
+    },
+    {
+      "corridor": "Market-B",
+      "price_slope": -1.3352853663142474,
+      "slope_ci_low": -1.4975558340719184,
+      "slope_ci_high": -1.1401669571178163,
+      "average_price_elasticity": -2.0815400567142706,
+      "recommended_multiplier": 1.0,
+      "predicted_conversion": 0.3278163722966421,
+      "predicted_contribution_per_quote_usd": 1.94427264519986,
+      "validation_brier": 0.1860077452163592,
+      "validation_selected_arm_quotes": 681,
+      "validation_selected_arm_conversion": 0.3303964757709251,
+      "validation_selected_arm_contribution_usd": 1.9037444933920706
+    },
+    {
+      "corridor": "Market-C",
+      "price_slope": -0.6289326878426031,
+      "slope_ci_low": -0.7469289723512469,
+      "slope_ci_high": -0.5048269810792718,
+      "average_price_elasticity": -0.7561218635931446,
+      "recommended_multiplier": 1.0,
+      "predicted_conversion": 0.5800246315018635,
+      "predicted_contribution_per_quote_usd": 3.7926787687312142,
+      "validation_brier": 0.21833961578343178,
+      "validation_selected_arm_quotes": 704,
+      "validation_selected_arm_conversion": 0.5880681818181818,
+      "validation_selected_arm_contribution_usd": 3.823721590909091
+    }
+  ],
+  "scope": "Synthetic simulation only; not an employer result",
+  "guardrail": "Predicted conversion no more than 3 percentage points below current within each corridor",
+  "limitations": [
+    "Fee and spread co-vary; separate fee and FX sensitivities are not identifiable.",
+    "One quote per user, short-term conversion only; no retention/LTV claim.",
+    "Model assumes logit linearity in total price percent and fixed variable costs.",
+    "Bootstrap CIs are pointwise slope CIs, not simultaneous decision guarantees.",
+    "No claim of optimized policy uplift without a prospective confirmatory test."
+  ]
+}
