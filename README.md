@@ -48,19 +48,6 @@ Read [the generated business memo](outputs/decision_memo.md), [machine-readable 
 - `.github/workflows/verify.yml`: rerun and checks on GitHub pushes/PRs.
 - `DATA_POLICY.md`: provenance and publication boundaries.
 
-## Interview discussion
-
-1. Why is contribution per quote preferable to revenue per transfer for this decision?
-2. Why include FX spread as well as an upfront fee? What does a USD-equivalent price omit?
-3. Why does randomized price assignment help identify a response curve?
-4. Why can this design not separate fee sensitivity from spread sensitivity?
-5. Why is elasticity different from the logistic price coefficient?
-6. Why is the optimizer restricted to observed price levels?
-7. How would repeated quotes, retention, acquisition promos and competitor prices change the design?
-
-## Honest presentation
-
-Describe this as an independently built simulation inspired by professional problem areas. Explain which implementation choices are new. Do not present simulated metrics as employer achievements. Employer names, logos and private supporting documents are unnecessary for this repository.
 
 ## Extensions
 
